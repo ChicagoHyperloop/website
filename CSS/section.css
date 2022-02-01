@@ -1,115 +1,113 @@
 #fullpage.no-scroll {
-	overflow-y: hidden;
-	max-height: 100vh;
+     overflow-y: hidden;
+     max-height: 100vh;
 }
 
 .section {
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
 }
 
 .section.one {
-	background-image:  url('../PICS/HyperloopIntro.png');
-	
+     background-image: url("../PICS/HyperloopIntro.png");
 }
 
 .section.two {
-	background-image: url('../PICS/Assembly_Final.png');
+     background-image: url("../PICS/Assembly_Final.png");
 }
 
 .section.three {
-	background-image: url(../media/3.avif);
+     background-image: url("../PICS/teamPicv2.jpg");
 }
 
 .section.four {
-	background-image: url(../media/4.avif);
+     background-image: url("../PICS/Test\ track\ final\(1\).jpg");
 }
 
 .section.five {
-	background-image: url(../media/5.avif);
+     background-image: url(../media/5.avif);
 }
 
 .section.six {
-	background-image: url(../media/6.avif);
+     background-image: url(../media/6.avif);
 }
 
 .section.seven {
-	background-image: url(../media/7.avif);
+     background-image: url(../media/7.avif);
 }
 
 .section__content {
-	position: absolute;
-	top: 20%;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 100%;
-	text-align: center;
-	text-transform: capitalize;
-	color: var(--primary-color);
+     position: absolute;
+     top: 20%;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 100%;
+     text-align: center;
+     text-transform: capitalize;
+     color: var(--primary-color);
 }
 
 .section__content__title {
-	font-size: 4rem;
-	font-weight: bold;
-	margin-bottom: 0.5rem;
+     font-size: 4rem;
+     font-weight: bold;
+     margin-bottom: 0.5rem;
 }
 
-.section__content__subtitle span{
+.section__content__subtitle span {
+     background-color: gray;
+     padding-left: 1rem;
+     padding-right: 1rem;
+     border-radius: 1rem;
 
-	background-color: gray;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	border-radius: 1rem;
-
-	/*color: red;*/
+     /*color: red;*/
 }
 
 .section__content__subtitle {
-	font-size: 1.5rem;
-	font-weight: 500;
-	border-radius: 2.5 rem;
-	/*background-color: gray;
+     font-size: 1.5rem;
+     font-weight: 500;
+     border-radius: 2.5 rem;
+     /*background-color: gray;
 */
-	/*color: red;*/
+     /*color: red;*/
 }
 
 .section__content__subtitle a {
-	color: inherit;
+     color: inherit;
 }
 
 .section__content__subtitle a:hover {
-	text-decoration: underline;
+     text-decoration: underline;
 }
 
 .section__action__container {
-	position: absolute;
-	bottom: 15%;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 100%;
-	text-align: center;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+     position: absolute;
+     bottom: 15%;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 100%;
+     text-align: center;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
 }
 
 .section__action__btn {
-	font-size: 1.5rem;
-	font-weight: 500;
-	padding: 1rem;
-	border-radius: 2rem;
-	flex-basis: 80%;
-	margin-bottom: 1rem;
-	text-transform: capitalize;
+     font-size: 1.5rem;
+     font-weight: 500;
+     padding: 1rem;
+     border-radius: 2rem;
+     flex-basis: 80%;
+     margin-bottom: 1rem;
+     text-transform: capitalize;
 }
 
 .action__btn__primary {
-	background: rgba(23, 26, 42, 0.8);
-	color: white;
+     background: rgba(23, 26, 42, 0.8);
+     color: white;
 }
 
 .action__btn__secondary {
-	background: rgba(255, 255, 255, 0.65);
-	color: var(--primary-color);
+     background: rgba(255, 255, 255, 0.65);
+     color: var(--primary-color);
 }
