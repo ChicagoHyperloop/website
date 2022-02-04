@@ -10,6 +10,62 @@
      box-sizing: border-box;
 }
 
+.social-icons {
+     padding: 0;
+     list-style: none;
+     margin: 1em;
+}
+
+.social-icons li {
+     display: inline-block;
+
+     margin: 0.15em;
+     margin-top: 210px;
+     position: relative;
+     font-size: 1em;
+}
+
+.social-icons i {
+     color: #fff;
+     position: absolute;
+     top: 0.95em;
+     left: 0.96em;
+     transition: all 265ms ease-out;
+}
+
+.social-icons a {
+     display: inline-block;
+}
+
+.social-icons a:before {
+     transform: scale(1);
+     -ms-transform: scale(1);
+     -webkit-transform: scale(1);
+     content: " ";
+     width: 45px;
+     height: 45px;
+     border-radius: 100%;
+     display: block;
+     background: linear-gradient(45deg, #ff003c, #c648c8);
+     transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+     transform: scale(0);
+     transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+     transform: scale(2.2);
+     -ms-transform: scale(2.2);
+     -webkit-transform: scale(2.2);
+     color: #ff003c;
+     background: -webkit-linear-gradient(45deg, #ff003c, #c648c8);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     transition: all 265ms ease-in;
+}
+
 html,
 body {
      width: 100%;
@@ -77,24 +133,26 @@ body {
           height: 40px;
           text-align: center;
           animation: fadeIn 2s ease-in;
-          a {
+          .nameRank {
                color: white;
                text-decoration: none;
                font-weight: 700;
                font-size: 18px;
+               /*
                &:hover {
                     text-decoration: underline;
                     color: crimson;
-               }
+               }*/
           }
           h6 {
+               font-size: 13px;
                position: absolute;
                margin: auto;
                left: 0;
                right: 0;
                bottom: 0;
                color: white;
-               width: 40px;
+               width: 150px;
           }
      }
      .button {
