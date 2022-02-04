@@ -1,25 +1,37 @@
-const fullpageEl = document.getElementById('fullpage')
-const menuBtn = document.querySelector('.menu__btn')
-const navigation = document.querySelector('.navigation')
-const navCloseBtn = document.querySelector('.navigation__close__btn')
+console.log("index.js loaded");
 
-const blurOverlay = document.querySelector('.blur__overlay')
+/*
+     !!warning!! - you are about to use javascript, you may throw your computer out the window
+     JS for index.html
+     
+     TODO:
+          - loading external html
+     
+          - implement skrollr for parallax
 
-const IS_ACTIVE = 'is--active'
+*/
+
+const fullpageEl = $("#fullpage");
+const menuBtn = $(".menu__btn");
+const navigation = $(".navigation");
+const navCloseBtn = $(".navigation__close__btn");
+const blurOverlay = $(".blur-overlay");
+
+const IS_ACTIVE = "is--active";
 
 const toggleNavigation = () => {
-	navigation.classList.toggle(IS_ACTIVE)
-	blurOverlay.classList.toggle(IS_ACTIVE)
-	fullpageEl.classList.toggle('no-scroll')
-}
+     navigation.toggleClass(IS_ACTIVE);
+     blurOverlay.toggleClass(IS_ACTIVE);
+     fullpageEl.toggleClass("no-scroll");
+};
 
-const CLICK = 'click'
+$(document).ready(function () {
+     new fullpage("#fullpage", {
+          autoScrolling: true,
+          scrollBar: true,
+     });
 
-menuBtn.addEventListener(CLICK, toggleNavigation)
-navCloseBtn.addEventListener(CLICK, toggleNavigation)
-blurOverlay.addEventListener(CLICK, toggleNavigation)
-
-new fullpage('#fullpage', {
-	autoScrolling: true,
-	scrollBar: true,
-})
+     menuBtn.click(toggleNavigation);
+     navCloseBtn.click(toggleNavigation);
+     blurOverlay.click(toggleNavigation);
+});

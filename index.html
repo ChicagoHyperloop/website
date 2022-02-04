@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html>
 	<head>
+          
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
+
+          <base href="./" target="_blank">
+
 		<link rel="icon" type="image/x-icon" href="/PICS/logoBlackCircle.png">
-		<title>Hyperloop | Home</title>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"
-			integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<link rel="stylesheet" href="./CSS/reset.css" />
-		<link rel="stylesheet" href="./CSS/variable.css" />
-		<link rel="stylesheet" href="./CSS/header.css" />
-		<link rel="stylesheet" href="./CSS/navigation.css" />
-		<link rel="stylesheet" href="./CSS/section.css" />
-		<link rel="stylesheet" href="./CSS/footer.css" />
-		<link rel="stylesheet" href="./CSS/responsive.css" />
+		
+          <title>Hyperloop | Home</title>
+		
+          <link rel="stylesheet" href="CSS/reset.css" />
+		<link rel="stylesheet" href="CSS/variable.css" />
+		<link rel="stylesheet" href="CSS/header.css" />
+		<link rel="stylesheet" href="CSS/navigation.css" />
+		<link rel="stylesheet" href="CSS/section.css" />
+		<link rel="stylesheet" href="CSS/footer.css" />
+		<link rel="stylesheet" href="CSS/responsive.css" />
+
+          <link rel="stylesheet" href="CSS/fullpage.css"/>
+
+          <script src = "https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+          <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+          <script src = "js/index.js"></script>
 	
 	</head>
 
@@ -27,34 +33,36 @@
 
 		<header class="header">
 			<a class="header__left" href="#">
-				<img class="header__logo" src="./PICS/logoBlackCircle.png" alt = "Logo" />
+				<img class="header__logo" src="PICS/logoBlackCircle.png" alt = "Logo" />
 			</a>
 
 			<ul class="header__middle">
 			<li>
-				<li><a class="header__nav__btn" href="#">About</a></li>
-				<li><a class="header__nav__btn" href="#">Team</a></li>
-				<li><a class="header__nav__btn" href="#">News</a></li>
-				<li><a class="header__nav__btn" href="#">Sponsors</a></li>
+				<li><a class="header__nav__btn" href="HTML/about.html">About</a></li>
+				<li><a class="header__nav__btn" href="HTML/team.html">Team</a></li>
+				<li><a class="header__nav__btn" href="HTML/news.html">News</a></li>
+				<!--<li><a class="header__nav__btn" href="HTML/sponsors.html">Sponsors</a></li>-->
 			</li>
 			</ul>
 
 			<div class="header__right">
+                    
 				<a class="header__nav__btn" href="#">Lorem Ipsum</a>
 				<a class="header__nav__btn" href="#">Join Us</a>
-				<a class="header__nav__btn menu__btn" href="#">Contact</a>
+                    <!-- TODO: fix scrolling to wrong spot on click-->
+				<a class="header__nav__btn menu__btn">Menu</a>
 			</div>
 		</header>
 
 		<nav class="navigation">
 			<div class="close__btn__container">
-				<img class="navigation__close__btn" src="media/close_icon.svg" alt="" />
+				<img class="navigation__close__btn" src="PICS/close_icon.svg" alt="" />
 			</div>
 
 			<ul>
-				<li class="link__in__middle"><a class="nav__link" href="#">About</a></li>
-				<li class="link__in__middle"><a class="nav__link" href="#">Team</a></li>
-				<li class="link__in__middle"><a class="nav__link" href="#">News</a></li>
+				<li class="link__in__middle"><a class="nav__link" href="./HTML/about.html">About</a></li>
+				<li class="link__in__middle"><a class="nav__link" href="./HTML/team.html">Team</a></li>
+				<li class="link__in__middle"><a class="nav__link" href="./HTML/news.html">News</a></li>
 				<li class="link__in__middle"><a class="nav__link" href="#">Sponsors</a></li>
 
 				<li><a class="nav__link" href="#">About</a></li>
@@ -84,7 +92,7 @@
 				<div class="section__content">
 					<h1 class="section__content__title">About</h1>
 					<h2 class="section__content__subtitle"><span>
-						preorder your hyperloop Now, will arrive as soon as 2132
+						Bring better futures now
 					</span>
 					</h2>
 				</div>
@@ -98,9 +106,9 @@
 
 			<section class="section three">
 				<div class="section__content">
-					<h1 class="section__content__title">Community</h1>
+					<h1 class="section__content__title">Team</h1>
 					<h2 class="section__content__subtitle"><span>
-						learn about our rich community
+						Strength in diversity
 					</span>
 						<a href="#"></a>
 					</h2>
@@ -151,6 +159,8 @@
 				</footer>
 			</section>
 		</section>
+<!--
+
 
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
@@ -159,6 +169,6 @@
 			referrerpolicy="no-referrer"
 		></script>
 
-		<script src="js/index.js"></script>
+		-->
 	</body>
 </html>

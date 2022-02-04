@@ -1,34 +1,147 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+     <head>
+          <title>Chicago Hyperloop | Team</title>
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <link rel="icon" href="./PICS/logoBlackCircle.png" />
 
-	<head>
-		<title>Chicago Hyperloop | Home</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="./PICS/logoBlackCircle.png">
-		
-	</head>
-	<body id = "background">
+          <link rel="stylesheet" href="../CSS/team.css" />
+          <link rel="stylesheet" href="../../CSS/header.css" />
+     </head>
+     <body id="background">
+          <header class="header">
+			<a class="header__left" href="#">
+				<img class="header__logo" src="./PICS/logoBlackCircle.png" alt = "Logo" />
+			</a>
 
-	    <div id = "top">
-			<h1>
-				Chicago Hyperloop Home
-			</h1>
-			<span>
-				
-			<h2>
-				mechanics
-			</h2>
-			<body>
-				Thank you to the developers of <br>
-				<a href = "https://github.com/zxing-js/library"> ZXingJS</a> and <br>
-				<a href = "https://firebase.google.com/">google Firebase</a> and <br>
-				for making this possible <br>
-				you can find sourceCode for this website<a href="https://github.com/Team2338/HourTracker">here</a>
-			</body>
-				
-		</div>
-		
-		<div id = "footer" data-includeHTML = "html/HTMLImports/footer.html"></div>
+			<ul class="header__middle">
+			<li>
+				<li><a class="header__nav__btn" href="./HTML/about.html">About</a></li>
+				<li><a class="header__nav__btn" href="./HTML/team.html">Team</a></li>
+				<li><a class="header__nav__btn" href="./HTML/news.html">News</a></li>
+				<li><a class="header__nav__btn" href="#">Sponsors</a></li>
+			</li>
+			</ul>
 
-	</body>
+			<div class="header__right">
+				<a class="header__nav__btn" href="#">Lorem Ipsum</a>
+				<a class="header__nav__btn" href="#">Join Us</a>
+				<a class="header__nav__btn menu__btn" href="#">Contact</a>
+			</div>
+		</header>
+
+		<nav class="navigation">
+			<div class="close__btn__container">
+				<img class="navigation__close__btn" src="media/close_icon.svg" alt="" />
+			</div>
+
+			<ul>
+				<li class="link__in__middle"><a class="nav__link" href="./HTML/about.html">About</a></li>
+				<li class="link__in__middle"><a class="nav__link" href="./HTML/team.html">Team</a></li>
+				<li class="link__in__middle"><a class="nav__link" href="./HTML/news.html">News</a></li>
+				<li class="link__in__middle"><a class="nav__link" href="#">Sponsors</a></li>
+
+				<li><a class="nav__link" href="#">About</a></li>
+				<li><a class="nav__link" href="#">Team</a></li>
+				<li><a class="nav__link" href="#">News</a></li>
+				<li><a class="nav__link" href="#">Sponsors</a></li>
+				<li><a class="nav__link" href="#">Carl</a></li>
+				<li><a class="nav__link" href="#">Technyologius</a></li>
+
+			</ul>
+		</nav>
+          <!--
+          <h1>Meet the Team</h1>
+
+          <div class="card">
+               <img
+                    src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no"
+                    alt="Person"
+                    class="card__image"
+               />
+               <p class="card__name">Super Senpai Carl</p>
+               <div class="grid-container">
+                    <div class="grid-child-posts">156 Post</div>
+
+                    <div class="grid-child-followers">1012 Likes</div>
+               </div>
+               <ul class="social-icons">
+                    <li>
+                         <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                         <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                         <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                         <a href="#"><i class="fa fa-codepen"></i></a>
+                    </li>
+               </ul>
+               <button class="btn draw-border">Follow</button>
+               <button class="btn draw-border">Message</button>
+          </div>
+          <div class="card">
+               <img
+                    src="https://lh3.googleusercontent.com/oUUiPB9sq3ACq4bUaRmo8pgvC4FUpRRrQKcGIBSOsafawZfRpF1vruFeYt6uCfL6wGDQyvOi6Ez9Bpf1Fb7APKjIyVsft7FLGR6QqdRFTiceNQBm1In9aZyrXp33cZi9pUNqjHASdA=s170-no"
+                    alt="Person"
+                    class="card__image"
+               />
+               <p class="card__name">Murray Reeve</p>
+               <div class="grid-container">
+                    <div class="grid-child-posts">305 Post</div>
+
+                    <div class="grid-child-followers">2643 Likes</div>
+               </div>
+               <ul class="social-icons">
+                    <li>
+                         <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                         <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                         <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                         <a href="#"><i class="fa fa-codepen"></i></a>
+                    </li>
+               </ul>
+               <button class="btn draw-border">Follow</button>
+               <button class="btn draw-border">Message</button>
+          </div>
+          <div class="card">
+               <img
+                    src="https://lh3.googleusercontent.com/pZwZJ5HIL5iKbA91UGMUIPR0VJWa3K0vOGzDZmY6wU3EJBUdfsby3VEyxU162XxTyOyP3D154tjkr-4Jgcx8lygYUR8eB-jVmld4dsHi1c-mE_A8jKccseAG7bdEwVrcuuk6ciNtSw=s170-no"
+                    alt="Person"
+                    class="card__image"
+               />
+               <p class="card__name">Bianca Serrano</p>
+               <div class="grid-container">
+                    <div class="grid-child-posts">902 Post</div>
+
+                    <div class="grid-child-followers">1300 Likes</div>
+               </div>
+               <ul class="social-icons">
+                    <li>
+                         <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                         <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                         <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                         <a href="#"><i class="fa fa-codepen"></i></a>
+                    </li>
+               </ul>
+               <button class="btn draw-border">Follow</button>
+               <button class="btn draw-border">Message</button>
+          </div>-->
+     </body>
 </html>
