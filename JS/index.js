@@ -23,7 +23,4 @@ $(document).ready(function () {
           scrollBar: true,
      });
 
-     console.log("document ready");
-
-     console.log("document ready");
 });
