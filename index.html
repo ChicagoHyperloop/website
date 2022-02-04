@@ -24,56 +24,14 @@
           <script src = "https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
           <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-          <script src = "js/index.js"></script>
+          <script type = "module" src = "JS/index.js"></script>
 	
 	</head>
 
 	<body>
 		<div class="blur__overlay"></div>
 
-		<header class="header">
-			<a class="header__left" href="#">
-				<img class="header__logo" src="PICS/logoBlackCircle.png" alt = "Logo" />
-			</a>
-
-			<ul class="header__middle">
-			<li>
-				<li><a class="header__nav__btn" href="HTML/about.html">About</a></li>
-				<li><a class="header__nav__btn" href="HTML/team.html">Team</a></li>
-				<li><a class="header__nav__btn" href="HTML/news.html">News</a></li>
-				<!--<li><a class="header__nav__btn" href="HTML/sponsors.html">Sponsors</a></li>-->
-			</li>
-			</ul>
-
-			<div class="header__right">
-                    
-				<a class="header__nav__btn" href="#">Lorem Ipsum</a>
-				<a class="header__nav__btn" href="#">Join Us</a>
-                    <!-- TODO: fix scrolling to wrong spot on click-->
-				<a class="header__nav__btn menu__btn">Menu</a>
-			</div>
-		</header>
-
-		<nav class="navigation">
-			<div class="close__btn__container">
-				<img class="navigation__close__btn" src="PICS/close_icon.svg" alt="" />
-			</div>
-
-			<ul>
-				<li class="link__in__middle"><a class="nav__link" href="./HTML/about.html">About</a></li>
-				<li class="link__in__middle"><a class="nav__link" href="./HTML/team.html">Team</a></li>
-				<li class="link__in__middle"><a class="nav__link" href="./HTML/news.html">News</a></li>
-				<li class="link__in__middle"><a class="nav__link" href="#">Sponsors</a></li>
-
-				<li><a class="nav__link" href="#">About</a></li>
-				<li><a class="nav__link" href="#">Team</a></li>
-				<li><a class="nav__link" href="#">News</a></li>
-				<li><a class="nav__link" href="#">Sponsors</a></li>
-				<li><a class="nav__link" href="#">Carl</a></li>
-				<li><a class="nav__link" href="#">Technyologius</a></li>
-
-			</ul>
-		</nav>
+          <div data-includeHTML = "html/HTMLImports/header.html"></div>
 
 		<section id="fullpage">
 			<section class="section one">

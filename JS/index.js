@@ -1,4 +1,4 @@
-console.log("index.js loaded");
+import { loadExternalHTML } from "./scripts.js";
 
 /*
      !!warning!! - you are about to use javascript, you may throw your computer out the window
@@ -6,7 +6,6 @@ console.log("index.js loaded");
      
      TODO:
           - loading external html
-     
           - implement skrollr for parallax
 
 */
@@ -24,6 +23,13 @@ const toggleNavigation = () => {
      blurOverlay.toggleClass(IS_ACTIVE);
      fullpageEl.toggleClass("no-scroll");
 };
+
+function init() {
+     console.log("index.js loaded");
+     loadExternalHTML();
+};
+
+init();
 
 $(document).ready(function () {
      new fullpage("#fullpage", {
