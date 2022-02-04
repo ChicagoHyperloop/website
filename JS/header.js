@@ -26,7 +26,10 @@ const toggleNavigation = () => {
 console.log("header.js loaded");
 
 function init() {
-     menuBtn.click(toggleNavigation);
+     menuBtn.click(function (e) {
+          e.preventDefault();
+          toggleNavigation();
+     });
      navCloseBtn.click(toggleNavigation);
      blurOverlay.click(toggleNavigation);
 }
