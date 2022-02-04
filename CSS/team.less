@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Krub:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
 
 #background {
      background-color: #000000;
@@ -8,62 +9,6 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-}
-
-.social-icons {
-     padding: 0;
-     list-style: none;
-     margin: 1em;
-}
-
-.social-icons li {
-     display: inline-block;
-
-     margin: 0.15em;
-     margin-top: 210px;
-     position: relative;
-     font-size: 1em;
-}
-
-.social-icons i {
-     color: #fff;
-     position: absolute;
-     top: 0.95em;
-     left: 0.96em;
-     transition: all 265ms ease-out;
-}
-
-.social-icons a {
-     display: inline-block;
-}
-
-.social-icons a:before {
-     transform: scale(1);
-     -ms-transform: scale(1);
-     -webkit-transform: scale(1);
-     content: " ";
-     width: 45px;
-     height: 45px;
-     border-radius: 100%;
-     display: block;
-     background: linear-gradient(45deg, #ff003c, #c648c8);
-     transition: all 265ms ease-out;
-}
-
-.social-icons a:hover:before {
-     transform: scale(0);
-     transition: all 265ms ease-in;
-}
-
-.social-icons a:hover i {
-     transform: scale(2.2);
-     -ms-transform: scale(2.2);
-     -webkit-transform: scale(2.2);
-     color: #ff003c;
-     background: -webkit-linear-gradient(45deg, #ff003c, #c648c8);
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
-     transition: all 265ms ease-in;
 }
 
 html,
@@ -85,11 +30,12 @@ body {
      bottom: 0;
      left: 0;
      width: 250px;
-     height: 400px;
+     max-height: 500px;
      border-radius: 10px;
      box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
      background: #151515;
      overflow: hidden;
+
      .ds-top {
           position: absolute;
           margin: auto;
@@ -155,6 +101,75 @@ body {
                width: 150px;
           }
      }
+
+     .social-icons {
+          list-style: none;
+          position: absolute;
+          margin: auto;
+          /*padding: 8px;*/
+          top: 30px;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          width: inherit;
+          height: 40px;
+          text-align: center;
+     }
+
+     .social-icons li {
+          display: inline-block;
+
+          margin: 0.15em;
+          /*margin-top: 210px;*/
+          position: relative;
+          font-size: 1em;
+     }
+
+     .social-icons i {
+          height: 45px;
+          width: 45px;
+          color: #fff;
+          position: absolute;
+          top: 0.95em;
+          left: 0.96em;
+          transition: all 265ms ease-out;
+     }
+
+     .social-icons a {
+          display: inline-block;
+     }
+
+     .social-icons a:before {
+          transform: scale(1);
+          -ms-transform: scale(1);
+          -webkit-transform: scale(1);
+          content: " ";
+          width: 45px;
+          height: 45px;
+          border-radius: 100%;
+          display: block;
+          background: linear-gradient(45deg, #ff003c, #c648c8);
+          transition: all 265ms ease-out;
+     }
+
+     .social-icons a:hover:before {
+          transform: scale(0);
+          transition: all 265ms ease-in;
+     }
+
+     .social-icons a:hover i {
+          width: 45px;
+          height: 45px;
+          transform: scale(2.2);
+          -ms-transform: scale(2.2);
+          -webkit-transform: scale(2.2);
+          color: #ff003c;
+          background: -webkit-linear-gradient(45deg, #ff003c, #c648c8);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          transition: all 265ms ease-in;
+     }
+
      .button {
           position: absolute;
           margin: auto;
@@ -168,6 +183,7 @@ body {
           text-align: center;
           animation: fadeIn 2s ease-in;
           outline: none;
+          /*
           a {
                padding: 5px 20px;
                border-radius: 10px;
@@ -180,12 +196,12 @@ body {
                     color: white;
                     background: crimson;
                }
-          }
+          }*/
      }
      .ds-info {
           position: absolute;
           margin: auto;
-          top: 120px;
+          top: 200px;
           bottom: 0;
           right: 0;
           left: 0;
