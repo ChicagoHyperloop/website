@@ -16,7 +16,11 @@
           <link rel="stylesheet" href="CSS/navigation.css" />
           <link rel="stylesheet" href="CSS/footer.css" />
           <link rel="stylesheet" href="CSS/responsive.css" />
-          <link rel="stylesheet" href="CSS/team.css" />
+          <!--<link rel="stylesheet" href="CSS/team.css" />-->
+
+          
+          <link rel="stylesheet/less" type="text/css" href="CSS/team.less" />
+          <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
 
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -32,99 +36,52 @@
                https://codepen.io/AlbertFeynman/pen/YJGjmz
           -->
 
-          <div class="container">
-               <div class="card">
-                    
-                    <!-- TODO: find real picture-->
-
-                    <img
-                         src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no"
-                         alt="Person"
-                         class="card__image"
-                    />
-                    <p class="card__name">Carl Flood</p>
-                    
-                    <div class="grid-container">
-                         <div class="grid-child-posts">President</div>
-
-                         <div class="grid-child-followers">UIC CS student</div>
-                    </div>
-               
-                    <ul class="social-icons">
-                         <li>
-                              <a href="#"><i class="fa fa-instagram"></i></a>
-                         </li>
-                         <li>
-                              <a href="#"><i class="fa fa-twitter"></i></a>
-                         </li>
-                         <li>
-                              <a href="#"><i class="fa fa-linkedin"></i></a>
-                         </li>
-                         <li>
-                              <a href="#"><i class="fa fa-codepen"></i></a>
-                         </li>
-                    </ul>
-                    <button class="btn draw-border">Follow</button>
-                    <button class="btn draw-border">Message</button>
+          <div class="card">
+               <div class="ds-top"></div>
+               <div class="avatar-holder">
+                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1820405/profile/profile-512.jpg?1533058950" alt="Albert Einstein">
                </div>
-               <div class="card">
-                    <img
-                         src="https://lh3.googleusercontent.com/oUUiPB9sq3ACq4bUaRmo8pgvC4FUpRRrQKcGIBSOsafawZfRpF1vruFeYt6uCfL6wGDQyvOi6Ez9Bpf1Fb7APKjIyVsft7FLGR6QqdRFTiceNQBm1In9aZyrXp33cZi9pUNqjHASdA=s170-no"
-                         alt="Person"
-                         class="card__image"
-                    />
-                    <p class="card__name">Murray Reeve</p>
-                    <div class="grid-container">
-                         <div class="grid-child-posts">305 Post</div>
-
-                         <div class="grid-child-followers">2643 Likes</div>
-                    </div>
-                    <ul class="social-icons">
-                         <li>
-                              <a href="#"><i class="fa fa-instagram"></i></a>
-                         </li>
-                         <li>
-                              <a href="#"><i class="fa fa-twitter"></i></a>
-                         </li>
-                         <li>
-                              <a href="#"><i class="fa fa-linkedin"></i></a>
-                         </li>
-                         <li>
-                              <a href="#"><i class="fa fa-codepen"></i></a>
-                         </li>
-                    </ul>
-                    <button class="btn draw-border">Follow</button>
-                    <button class="btn draw-border">Message</button>
+               <div class="name">
+                 <a href="https://codepen.io/AlbertFeynman/" target="_blank">Albert Feynman</a>
+                 <h6 title="Followers"><i class="fas fa-users"></i> <span class="followers">90</span></h6>
                </div>
-               <div class="card">
-                    <img
-                         src="https://lh3.googleusercontent.com/pZwZJ5HIL5iKbA91UGMUIPR0VJWa3K0vOGzDZmY6wU3EJBUdfsby3VEyxU162XxTyOyP3D154tjkr-4Jgcx8lygYUR8eB-jVmld4dsHi1c-mE_A8jKccseAG7bdEwVrcuuk6ciNtSw=s170-no"
-                         alt="Person"
-                         class="card__image"
-                    />
-                    <p class="card__name">Bianca Serrano</p>
-                    <div class="grid-container">
-                         <div class="grid-child-posts">902 Post</div>
-
-                         <div class="grid-child-followers">1300 Likes</div>
-                    </div>
-                    <ul class="social-icons">
-                         <li>
-                              <a href="#"><i class="fa fa-instagram"></i></a>
-                         </li>
-                         <li>
-                              <a href="#"><i class="fa fa-twitter"></i></a>
-                         </li>
-                         <li>
-                              <a href="#"><i class="fa fa-linkedin"></i></a>
-                         </li>
-                         <li>
-                              <a href="#"><i class="fa fa-codepen"></i></a>
-                         </li>
-                    </ul>
-                    <button class="btn draw-border">Follow</button>
-                    <button class="btn draw-border">Message</button>
+               <div class="button">
+                 <a href="#" class="btn" onmousedown="follow();">Follow <i class="fas fa-user-plus"></i></a>
                </div>
-          </div>
-     </body>
+               <div class="ds-info">
+                 <div class="ds pens">
+                   <h6 title="Number of pens created by the user">Pens <i class="fas fa-edit"></i></h6>
+                   <p>29</p>
+                 </div>
+                 <div class="ds projects">
+                   <h6 title="Number of projects created by the user">Projects <i class="fas fa-project-diagram"></i></h6>
+                   <p>0</p>
+                 </div>
+                 <div class="ds posts">
+                   <h6 title="Number of posts">Posts <i class="fas fa-comments"></i></h6>
+                   <p>0</p>
+                 </div>
+               </div>
+               <div class="ds-skill">
+                 <h6>Skill <i class="fa fa-code" aria-hidden="true"></i></h6>
+                 <div class="skill html">
+                   <h6><i class="fab fa-html5"></i> HTML5 </h6>
+                   <div class="bar bar-html">
+                     <p>95%</p>
+                   </div>
+                 </div>
+                 <div class="skill css">
+                   <h6><i class="fab fa-css3-alt"></i> CSS3 </h6>
+                   <div class="bar bar-css">
+                     <p>90%</p>
+                   </div>
+                 </div>
+                 <div class="skill javascript">
+                   <h6><i class="fab fa-js"></i> JavaScript </h6>
+                   <div class="bar bar-js">
+                     <p>75%</p>
+                   </div>
+                 </div>
+               </div>
+             </div>
 </html>
