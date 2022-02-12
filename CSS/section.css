@@ -10,15 +10,15 @@
 }
 
 .section.one {
-     background-image: url("../PICS/HyperloopIntro.png");
+     background-image: url("../PICS/Test\ track\ final\(1\).jpg");
 }
 
 .section.two {
-     background-image: url("../PICS/Assembly_Final.png");
+     background-image: url("../PICS/teamPicv2.jpg");
 }
 
 .section.three {
-     background-image: url("../PICS/teamPicv2.jpg");
+     background-image: url('../PICS/10_6_2019\ St\ Louis.jpg');
 }
 
 .section.four {
@@ -27,14 +27,6 @@
 
 .section.five {
      background-image: url('../PICS/10_6_2019\ St\ Louis.jpg');
-}
-
-.section.six {
-     background-image: url(../media/6.avif);
-}
-
-.section.seven {
-     background-image: url(../media/7.avif);
 }
 
 .section__content {
@@ -107,5 +99,5 @@
 
 .action__btn__secondary {
      background: rgba(255, 255, 255, 0.65);
-     color: var(--primary-color);
+     color: rgba(23, 26, 42, 0.8);
 }

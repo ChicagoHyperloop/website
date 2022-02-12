@@ -18,8 +18,9 @@
 		<link rel="stylesheet" href="CSS/section.css" />
 		<link rel="stylesheet" href="CSS/footer.css" />
 		<link rel="stylesheet" href="CSS/responsive.css" />
-
           <link rel="stylesheet" href="CSS/fullpage.css"/>
+
+          <link rel="stylesheet" href="CSS/index.css"/>
 
           <script src = "https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
           <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -31,10 +32,10 @@
 	<body>
 		<div class="blur__overlay"></div>
 
-          <div data-includeHTML = "html/HTMLImports/header.html"></div>
+          <div data-includeHTML = "HTML/HTMLImports/header.html"></div>
 
 		<section id="fullpage">
-			<section class="section one">
+			<section class="section one" id = "Home">
 				<div class="section__content">
 					<h1 class="section__content__title">Chicago Hyperloop</h1>
 					<h2 class="section__content__subtitle">
@@ -46,7 +47,7 @@
 				</div>
 			</section>
 
-			<section class="section two">
+			<section class="section two" id = "About">
 				<div class="section__content">
 					<h1 class="section__content__title">About</h1>
 					<h2 class="section__content__subtitle"><span>
@@ -62,71 +63,27 @@
 				</div>
 			</section>
 
-			<section class="section three">
+			<section class="section three" id = "Community">
 				<div class="section__content">
-					<h1 class="section__content__title">Team</h1>
+					<h1 class="section__content__title">Community</h1>
 					<h2 class="section__content__subtitle"><span>
-						Strength in diversity
-					</span>
-						<a href="#"></a>
-					</h2>
+						Meet the Community that makes this possible
+					</span></h2>
 				</div>
 
 				<div class="section__action__container">
-					<a class="section__action__btn action__btn__primary" href="#">
-						Learn More
+					<a class="section__action__btn action__btn__primary" href="HTML/team.html">
+						Meet the team
+					</a>
+                         <a class="section__action__btn action__btn__secondary" href="HTML/joinUs.html">
+						Join us
 					</a>
 				</div>
+
+                    <div data-includeHTML = "HTML/HTMLImports/footer.html"></div>
 			</section>
 
-			<section class="section four">
-				<div class="section__content">
-					<h1 class="section__content__title">Sponsors</h1>
-					<h2 class="section__content__subtitle"><span>
-						Hear from our Sponsors
-					</span>
-				</div>
-
-				<div class="section__action__container">
-					<a class="section__action__btn action__btn__primary" href="#"><span>Moola</span></a>
-				</div>
-			</section>
-
-			<section class="section five">
-				<div class="section__content">
-					<h1 class="section__content__title">Join Us</h1>
-					<h2 class="section__content__subtitle"><span>
-						journey into a better future with us
-					</span>
-				</div>
-
-				<div class="section__action__container">
-					<a class="section__action__btn action__btn__primary" href="#"><span>Join Us</span></a>
-				</div>
-
-				<footer class="footer">
-					<ul>
-						<li><a href="#">Chicago Hyperloop</a></li>
-						<li><a href="#">UIC nonforprofit student organization</a></li>
-						<li><a href="#">Contact</a></li>
-						<li><a href="#">Carl - President</a></li>
-						<li><a href="#">Zain - Vice President</a></li>
-						<li><a href="#">engage</a></li>
-						<li><a href="#">locations</a></li>
-					</ul>
-				</footer>
-			</section>
 		</section>
-<!--
 
-
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
-			integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		></script>
-
-		-->
 	</body>
 </html>
