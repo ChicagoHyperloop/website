@@ -1,5 +1,5 @@
 .header {
-     height: 5rem;
+     height: 5.75rem;
      position: fixed;
      top: 0;
      left: 0;
@@ -10,7 +10,7 @@
 }
 
 .header__middle {
-     margin-top: .75 rem;
+     margin-top: 0.75 rem;
      display: flex;
      align-items: center;
 }
