@@ -10,6 +10,7 @@
 }
 
 .header__middle {
+     margin-top: .75 rem;
      display: flex;
      align-items: center;
 }
