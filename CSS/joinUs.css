@@ -10,6 +10,11 @@
      list-style-type: color;
      color: white;
 }
+
+a {
+     color: lightblue;
+}
+
 /*
 p {
      display: block;
@@ -19,6 +24,7 @@ p {
 
 #centerThisShit {
      display: block;
+     margin-top: 6rem;
      margin-left: auto;
      margin-right: auto;
      width: 50%;
