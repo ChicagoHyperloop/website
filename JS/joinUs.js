@@ -18,4 +18,11 @@ init();
 
 $(document).ready(function () {
      loadExternalHTML();
+     new fullpage("#fullpage", {
+          autoScrolling: true,
+          scrollBar: true,
+     });
 });
+
+
+init();

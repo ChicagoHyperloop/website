@@ -1,89 +1,98 @@
 <!DOCTYPE html>
 <html>
-	<head>
-          
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
+     <head>
+          <meta charset="utf-8" />
+          <meta name="viewport" content="width=device-width" />
 
-          <base href="./" >
+          <base href="./" />
 
-		<link rel="icon" type="image/x-icon" href="/PICS/logoBlackCircle.png">
-		
+          <link
+               rel="icon"
+               type="image/x-icon"
+               href="/PICS/logoBlackCircle.png"
+          />
+
           <title>Hyperloop | Home</title>
-		
+
           <link rel="stylesheet" href="CSS/reset.css" />
-		<link rel="stylesheet" href="CSS/variable.css" />
-		<link rel="stylesheet" href="CSS/header.css" />
-		<link rel="stylesheet" href="CSS/navigation.css" />
-		<link rel="stylesheet" href="CSS/section.css" />
-		<link rel="stylesheet" href="CSS/footer.css" />
-		<link rel="stylesheet" href="CSS/responsive.css" />
-          <link rel="stylesheet" href="CSS/fullpage.css"/>
+          <link rel="stylesheet" href="CSS/variable.css" />
+          <link rel="stylesheet" href="CSS/header.css" />
+          <link rel="stylesheet" href="CSS/navigation.css" />
+          <link rel="stylesheet" href="CSS/section.css" />
+          <link rel="stylesheet" href="CSS/footer.css" />
+          <link rel="stylesheet" href="CSS/responsive.css" />
+          <link rel="stylesheet" href="CSS/fullpage.css" />
 
-          <link rel="stylesheet" href="CSS/index.css"/>
+          <link rel="stylesheet" href="CSS/index.css" />
 
-          <script src = "https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
-          <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-          <script type = "module" src = "JS/index.js"></script>
-	
-	</head>
+          <script type="module" src="JS/index.js"></script>
+     </head>
 
-	<body>
-		<div class="blur__overlay"></div>
+     <body>
+          <!-- TODO: fix the blur aspect-->
+          <div class="blur__overlay"></div>
 
-          <div data-includeHTML = "HTML/HTMLImports/header.html"></div>
+          <div data-includeHTML="HTML/HTMLImports/header.html"></div>
 
-		<section id="fullpage">
-			<section class="section one" id = "Home">
-				<div class="section__content">
-					<h1 class="section__content__title">Chicago Hyperloop</h1>
-					<h2 class="section__content__subtitle">
-						<span>
-							Speeding into the Future
-						</span>
-					</h2>
-				</div>
-				</div>
-			</section>
+          <section id="fullpage">
+               <!--landing-->
+               <section class="section one" id="Home">
+                    <div class="section__content">
+                         <h1 class="section__content__title">
+                              Chicago Hyperloop
+                         </h1>
+                         <h2 class="section__content__subtitle">
+                              <span> Speeding into the Future </span>
+                         </h2>
+                    </div>
+               </section>
 
-			<section class="section two" id = "About">
-				<div class="section__content">
-					<h1 class="section__content__title">About</h1>
-					<h2 class="section__content__subtitle"><span>
-						Bring better futures now
-					</span>
-					</h2>
-				</div>
+               <section class="section two" id="About">
+                    <div class="section__content">
+                         <h1 class="section__content__title">About</h1>
+                         <h2 class="section__content__subtitle">
+                              <span> Bring better futures faster </span>
+                         </h2>
+                    </div>
 
-				<div class="section__action__container">
-					<a class="section__action__btn action__btn__primary" href="HTML/about.html">
-						Learn about what we do
-					</a>
-				</div>
-			</section>
+                    <div class="section__action__container">
+                         <a
+                              class="section__action__btn action__btn__primary"
+                              href="HTML/about.html"
+                         >
+                              Learn about what we do
+                         </a>
+                    </div>
+               </section>
 
-			<section class="section three" id = "Community">
-				<div class="section__content">
-					<h1 class="section__content__title">Community</h1>
-					<h2 class="section__content__subtitle"><span>
-						Meet the Community that makes this possible
-					</span></h2>
-				</div>
+               <section class="section three" id="joinUs">
+                    <!--turn this into a Join us Page-->
+                    <div class="section__content">
+                         <h1 class="section__content__title">Join Us</h1>
+                         <h2 class="section__content__subtitle">
+                              <span> Lorem Ipsum Dolor Amet </span>
+                         </h2>
+                    </div>
 
-				<div class="section__action__container">
-					<a class="section__action__btn action__btn__primary" href="HTML/team.html">
+                    <!--I dont think we need this useless piece of shit code no mo-->
+                    <!--
+                    <div class="section__action__container">-->
+                         <!--turn this into a bunch of links section-->
+                         <!--
+                         <a class="section__action__btn action__btn__primary" href="HTML/team.html">
 						Meet the team
 					</a>
                          <a class="section__action__btn action__btn__secondary" href="HTML/joinUs.html">
 						Join us
 					</a>
-				</div>
+                         -->
+                    <!--</div>-->
 
-                    <div data-includeHTML = "HTML/HTMLImports/footer.html"></div>
-			</section>
-
-		</section>
-
-	</body>
+                    <div data-includeHTML="HTML/HTMLImports/footer.html"></div>
+               </section>
+          </section>
+     </body>
 </html>

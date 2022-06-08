@@ -29,6 +29,11 @@
      background-image: url('../PICS/10_6_2019\ St\ Louis.jpg');
 }
 
+.section.one-joinUs {
+     /*background-image: url('../PICS/10_6_2019\ St\ Louis.jpg');*/
+
+}
+
 .section__content {
      position: absolute;
      top: 20%;
