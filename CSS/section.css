@@ -1,12 +1,20 @@
+/*
 #fullpage.no-scroll {
      overflow-y: hidden;
      max-height: 100vh;
-}
+}*/
 
 .section {
+     display: block;
+     overflow: hidden;
+     width: 100vw;
+     height: 100vh;
+     margin-right: 0;
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
+     background-color: green;
+     color: white;
 }
 
 .section.one {
@@ -19,6 +27,7 @@
 
 .section.three {
      background-image: url('../PICS/10_6_2019\ St\ Louis.jpg');
+     position: relative;
 }
 
 .section.four {
@@ -31,6 +40,13 @@
 
 .section.one-joinUs {
      /*background-image: url('../PICS/10_6_2019\ St\ Louis.jpg');*/
+
+}
+
+.blackBox{
+     width: 100vw; /*make this auto or % eventually*/
+     height: 50vh;
+     background-color: rgb(0, 0, 0); /* sauce: ketchup*/
 
 }
 
