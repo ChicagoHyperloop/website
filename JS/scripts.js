@@ -9,7 +9,9 @@ console.log("scripts.js loaded");
 
 */
 export function loadExternalHTML() {
+     
      console.log("loadExternalHTML()");
+
      $(document).ready(function () {
           $("div[data-includeHTML]").each(function () {
                $(this).load($(this).attr("data-includeHTML"));
