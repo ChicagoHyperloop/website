@@ -67,13 +67,13 @@
 		
 		#footerWrapper {
 			background-color: black;
-			opacity: .6;
+			/*opacity: .6;*/
 			color: white;
 			margin: 0;
 			border: 0;
 			padding: 25px 0px;
-			width: 100%;
-			position: absolute;
+			width: 100vw;
+			/*position: absolute;*/
 			bottom: 0;
 		}
 		
@@ -98,13 +98,16 @@
 			display: flex;
 			align-items: stretch; /* Default */
 			justify-content: space-between;
-			width: 100%;
+			width: 100vw;
 		}
 		
 		/* Turn off parallax scrolling for tablets and phones */
 		@media only screen and (max-device-width: 1024px) {
 			.imgBlock {
 				background-attachment: scroll;
+			}
+			ul {
+				display: block;
 			}
 		}
 	
@@ -189,19 +192,20 @@
 	<div class="caption">
 		<span class="border">We hope to see you soon!</span>
 	</div>
-	<div id = footerWrapper>
-		<footer>
-			<ul>
-				<li><a href="mailto:chicagohyperloop@gmail.com">email: chicagohyperloop@gmail.com</a></li>
-				<li><a href="https://discord.gg/XYGgY5jayh">discord</a></li>
-				<li><a href="https://makerspace.uic.edu/">Makerspace</a></li>
-				<li><a href="https://calendar.google.com/calendar/u/2?cid=Y2hpY2Fnb2h5cGVybG9vcEBnbWFpbC5jb20">
-					calender
-				</a></li>
-				<li><a href="https://hyperloopweek.com/">European Hyperloop Week</a></li>
-			</ul>
-		</footer>
-	</div>
+</div>
+
+<div id = footerWrapper>
+	<footer>
+		<ul>
+			<li><a href="mailto:chicagohyperloop@gmail.com">email: chicagohyperloop@gmail.com</a></li>
+			<li><a href="https://discord.gg/XYGgY5jayh">discord</a></li>
+			<li><a href="https://makerspace.uic.edu/">Makerspace</a></li>
+			<li><a href="https://calendar.google.com/calendar/u/2?cid=Y2hpY2Fnb2h5cGVybG9vcEBnbWFpbC5jb20">
+				calender
+			</a></li>
+			<li><a href="https://hyperloopweek.com/">European Hyperloop Week</a></li>
+		</ul>
+	</footer>
 </div>
 
 <!--
