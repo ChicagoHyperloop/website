@@ -1,29 +1,142 @@
 #background {
-     /*used for debugging*/ 
+	/*used for debugging*/
+	margin: 0px;
+	border: 0;
+	padding: 0;
 
-     
+	width: 100%;
+	height: 100%;
+
+	background-color: lightgreen;
 }
 
+/* it goes
+	margin
+	border
+	padding
+	content
+*/
+.block {
+	/*this should be sizing for the img and blackBoxes*/
+
+	color: white;
+	background-color: blue;
+
+	margin: 0;
+	border: 0;
 
 
+	height: auto;
+	width: 100vw;
 
+}
 
+h1, h2, h3, h4, h5 {
+	margin: 0;
+	border: 0;
+	padding: 0;
 
+	font-weight: lighter;
+	text-transform: uppercase;
+	letter-spacing: 20px;
+	font-size: 20px;
 
+	color: white;
 
+}
 
+.imgcontent {
+	overflow: hidden;
+	margin: 50vh;
+}
 
+.img {
+	/*TODO: fix tall phone screen img stretching problem*/
+	/*this should be mostly image parallax things*/
 
+	position: relative;
 
+	padding: 0;
 
+	/*opacity: 0.65;*/
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 
+}
 
+.content {
+	background-color: black;
+	/*top/bottom padding, LR padding*/
+	width: 100vw;
+	/*padding: 50px 80px;*/
+	text-align: justify;
+	display: block;
+}
 
+.section__content {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100vw;
+	text-align: center;
+	text-transform: capitalize;
+	color: var(--primary-color);
+}
 
+.section__content__title {
+	color: white;
+	text-align: center;
+	font-size: 4rem;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
 
+.section__content__subtitle span {
+	/*background-color: gray;*/
+	text-align: center;
+	color: white;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	border-radius: 1rem;
+}
 
+.section__content__subtitle {
+	font-size: 1.5rem;
+	font-weight: 500;
+	border-radius: 2.5rem;
+}
 
+#landing {
+	height: 100vh;
+	background-image: url("/PICS/Test track final(1).jpg");
+}
 
+#section2 {
+
+}
+
+#section3 {
+	height: 50vh;
+	background-image: url("/PICS/teamPicv2.jpg");
+}
+
+#section4 {
+
+}
+
+#section5 {
+	height: 50vh;
+	background-image: url("/PICS/10_6_2019 St Louis.jpg");
+}
+
+/*background-color: gray;
+*/
+/*color: red;*/
+/*
+}
 
 
 /*
@@ -33,11 +146,11 @@
 }*/
 
 /*#background {*/
-     /*used for debugging*/
-     /*background-color: green;
-*/     
-     /*vv get rid of this vv*/
-     /*height: 100%;*/
+/*used for debugging*/
+/*background-color: green;
+*/
+/*vv get rid of this vv*/
+/*height: 100%;*/
 /*
      width: 100%;
 
@@ -61,25 +174,25 @@
 */
 /*
 .parallax {*/
-     /* The image used */
-     
-     /* Set a specific height */
-     /*min-height: 500px;*/
+/* The image used */
+
+/* Set a specific height */
+/*min-height: 500px;*/
 /*
      height: 100vh;
      width: 100vw;
 
      background-size: 100%, 100%;
-  */ 
-     /* Create the parallax scrolling effect */
-    /* background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
+  */
+/* Create the parallax scrolling effect */
+/* background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
 
-     margin: 0;
-     border: 0;
-     padding: 0;
+ margin: 0;
+ border: 0;
+ padding: 0;
 }
 */
 /*
@@ -130,9 +243,9 @@
      border-radius: 2.5 rem;
      text-align: center;
 }*/
-     /*background-color: gray;
+/*background-color: gray;
 */
-     /*color: red;*/
+/*color: red;*/
 /*
 }
 
@@ -201,9 +314,9 @@
      font-weight: 500;
      border-radius: 2.5 rem;
      */
-     /*background-color: gray;
+/*background-color: gray;
 */
-     /*color: red;*/
+/*color: red;*/
 /*
 }
 
