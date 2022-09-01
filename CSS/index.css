@@ -1,57 +1,113 @@
-#background {
-     position: absolute;
-     top: 0;
-     bottom: 0;
-     margin: 0;
-     width: 100%;
-     height: 100%;
-     /*background-image: url("../PICS/HyperloopIntro.png"), 
-    url("PICS/HyperloopAbout.png");
-    background-position: top, left top;
-    background-repeat: no-repeat, no-repeat;*/
+body, html {
+	height: 100%;
+	margin: 0;
+	font: 400 15px/1.8 "Lato", sans-serif;
+	color: #777;
 }
 
-/* Path: screen sized image block */
+.imgBlock {
+	position: relative;
+	/*opacity: 0.65;*/
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 
-.screenBlock {
-     display: block;
-     width: 100vw;
-     height: 100vh;
-     background-color: #ffffff;
-     z-index: 1;
 }
 
-#intro {
-     position: absolute;
-     top: 0;
-     width: 100%;
-     margin: 0px;
-     background-image: url("PICS/HyperloopIntro.png");
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-color: #af0c0c;
+.bigImg {
+	min-height: 100%;
 }
 
-#about {
-     position: absolute;
-     top: 100vh;
-     width: 100%;
-     margin: 0px;
-     background-image: url("PICS/HyperloopAbout.png");
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-color: #af0c0c;
+.smallImg {
+	min-height: 400px;
 }
 
-#title {
-     margin-top: 10vh;
-     margin-bottom: 10vh;
-     width: 100%;
-     text-align: center;
-     font-size: 10vh;
-     text-align: center;
-     color: #ffffff;
-     z-index: 2;
+.blackBox {
+	color: white;
+	background-color:black;
+	padding:50px 80px;
+	text-align: justify;
+}
+
+.bgimg-1 {
+	background-image: url("/PICS/Test track final(1).jpg");
+}
+
+.bgimg-2 {
+	background-image: url("/PICS/teamPicv2.jpg");
+}
+
+.bgimg-3 {
+	background-image: url("/PICS/10_6_2019 St Louis.jpg");
+}
+
+.caption {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+}
+
+.caption span.border {
+	background-color: #111;
+	color: #fff;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 10px;
+}
+
+h3 {
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font: 20px "Lato", sans-serif;
+	color: white;
+}
+
+#footerWrapper {
+	background-color: black;
+	/*opacity: .6;*/
+	color: white;
+	margin: 0;
+	border: 0;
+	padding: 25px 0px;
+	width: 100vw;
+	/*position: absolute;*/
+	bottom: 0;
+}
+
+ul > li {
+	margin: 0;
+	border: 0;
+	padding: 15px 40px;
+	display: inline-block;
+}
+
+ul a {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	color: white;
+}
+
+ul {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	display: flex;
+	align-items: stretch; /* Default */
+	justify-content: space-between;
+	width: 100vw;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+	.imgBlock {
+		background-attachment: scroll;
+	}
+	ul {
+		display: block;
+	}
 }
