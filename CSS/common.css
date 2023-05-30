@@ -1,9 +1,10 @@
+
 body, html {
 	height: 100%;
 	width : 100%;
 	margin: 0;
 	font: 400 15px/1.8 "Lato", sans-serif;
-	color: #777;
+	color: green;
 }
 
 .imgBlock {
@@ -13,8 +14,9 @@ body, html {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-
 }
+
+/*Image Blocks*/
 
 .bigImg {
 	min-height: 100%;
@@ -31,18 +33,6 @@ body, html {
 	text-align: justify;
 }
 
-.bgimg-1 {
-	background-image: url("PICS/Test\ track\ final\(1\).jpg");
-}
-
-.bgimg-2 {
-	background-image: url("PICS/photoShoot/Yu\ xx\ Ron.jpg");
-	
-}
-
-.bgimg-3 {
-	background-image: url("PICS/10_6_2019 St Louis.jpg");
-}
 
 .caption {
 	position: absolute;
@@ -55,7 +45,7 @@ body, html {
 
 .caption span.border {
 	background-color: #111;
-	color: #fff;
+	color: white;
 	padding: 18px;
 	font-size: 25px;
 	letter-spacing: 10px;
@@ -68,7 +58,9 @@ h3 {
 	color: white;
 }
 
-#footerWrapper {
+/*FOOTER SHIT*/
+
+footer {
 	background-color: black;
 	/*opacity: .6;*/
 	color: white;
@@ -78,6 +70,7 @@ h3 {
 	width: full;
 	/*position: absolute;*/
 	bottom: 0;
+    display: inline-block;
 }
 
 ul > li {
@@ -98,7 +91,7 @@ ul {
 	margin: 0;
 	border: 0;
 	padding: 0;
-	display: flex;
+	/* display: flex; */
 	align-items: stretch; /* Default */
 	justify-content: space-between;
 	width: full;
@@ -109,7 +102,7 @@ ul {
 	.imgBlock {
 		background-attachment: scroll;
 	}
-	ul {
+	/* ul {
 		display: block;
-	}
+	} */
 }
