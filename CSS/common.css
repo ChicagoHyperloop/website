@@ -17,23 +17,32 @@ html {
 }
 
 /* NavBar bullshit */
-.Navbar {
-	display: inline;
-	width: 100vw;
-}
 
 .Navbar ul{
 	margin: 0;
+	margin-right: 20px;
 	border: 0;
 	padding: 20px 0px 0px 40px;
 	list-style-type: none;
-
-	width: 100vw;
+	overflow: hidden;
 	/* background-color: green; */
 }
 
 .Navbar li {
-	width: 30vw;
+	display: inline;
+}
+
+.sponsorsTagContainer {
+	width: 100px;
+	float: right;
+}
+
+.sponsorsTag {
+	text-align: center;
+	display: block;
+	color: white;
+	padding-right: 10%;
+	padding-top: 1%;
 }
 
 /*Image Blocks*/
@@ -95,7 +104,7 @@ body {
 	width: 100%;
 	margin: 1% 0%;
 	padding: 0.6% 0%;
-	color: gray;
+	color: black;
 	font-size: 0.8em;
 }
 
@@ -106,7 +115,7 @@ body {
 }
 
 .footer .row a:hover {
-	color: #fff;
+	color: white;
 }
 
 .footer .row ul {
@@ -127,6 +136,10 @@ body {
 	.footer {
 		text-align: left;
 		padding: 5%;
+	}
+
+	.footer .row ul {
+		width: 90%;
 	}
 
 	.footer .row ul li {
