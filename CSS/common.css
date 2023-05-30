@@ -67,7 +67,7 @@ footer {
 	margin: 0;
 	border: 0;
 	padding: 25px 0px;
-	width: full;
+	width: 100%;
 	/*position: absolute;*/
 	bottom: 0;
     display: inline-block;
@@ -91,7 +91,7 @@ ul {
 	margin: 0;
 	border: 0;
 	padding: 0;
-	/* display: flex; */
+	display: flex;
 	align-items: stretch; /* Default */
 	justify-content: space-between;
 	width: full;
