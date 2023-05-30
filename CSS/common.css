@@ -104,7 +104,7 @@ body {
 	width: 100%;
 	margin: 1% 0%;
 	padding: 0.6% 0%;
-	color: black;
+	color: gray;
 	font-size: 0.8em;
 }
 
@@ -161,6 +161,10 @@ body {
 @media only screen and (max-device-width: 1024px) {
 	.imgBlock {
 		background-attachment: scroll;
+	}
+
+	.footer .row ul {
+		width: 90%;
 	}
 
 	/* ul {
